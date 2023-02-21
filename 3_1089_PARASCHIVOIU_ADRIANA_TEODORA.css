@@ -1,0 +1,69 @@
+*{
+    background-color: rgb(114, 168, 170);
+}
+
+.text{
+    fill:brown;
+}
+
+#id0{
+    fill: burlywood;
+}
+
+#id1{
+    fill: burlywood;
+}
+#id2{
+    fill: burlywood;
+}
+#id3{
+    fill: burlywood;
+}
+#id4{
+    fill: burlywood;
+}
+#id5{
+    fill: burlywood;
+}
+#id6{
+    fill: burlywood;
+}
+#id7{
+    fill: burlywood;
+}
+#id8{
+    fill: burlywood;
+}
+#id9{
+    fill: burlywood;
+}
+#id10{
+    fill: burlywood;
+}
+#id11{
+    fill: burlywood;
+}
+
+#id12{
+    fill: burlywood;
+}
+#id13{
+    fill: burlywood;
+}
+#id14{
+    fill: burlywood;
+}
+
+  td{
+      text-align: center;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(115, 115, 133);
+  }
+  
+  label{
+      font-size:large;
+  }

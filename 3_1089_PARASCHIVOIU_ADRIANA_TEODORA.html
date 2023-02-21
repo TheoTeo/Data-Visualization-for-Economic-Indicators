@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vizualizare date</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='3_1089_PARASCHIVOIU_ADRIANA_TEODORA.css'>
+    <script defer src='3_1089_PARASCHIVOIU_ADRIANA_TEODORA.js'></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label for="pib">Afisare grafica evolutie pentru indicatorul PIB si o tara selectata de catre
+                utilizator folosind un element de tip SVG</label>
+        </div>
+        <label for="tari">Selectati o tara: </label>
+        <select name="tari" id="tari">
+            <option value="Austria" id="Austria">Austria</option>
+            <option id='Belgium' value='Belgium'>Belgium</option>
+            <option value='Bulgaria'>Bulgaria</option>
+            <option value='Cyprus'>Cyprus</option>
+            <option value='Czechia'>Czechia</option>
+            <option value='Germany (until 1990 former territory of the FRG)'>Germany</option>
+            <option value='Denmark'>Denmark</option>
+            <option value='Estonia'>Estonia</option>
+            <option value='Greece'>Greece</option>
+            <option value='Spain'>Spain</option>
+            <option value='Finland'>Finland</option>
+            <option value='France'>France</option>
+            <option value='Croatia'>Croatia</option>
+            <option value='Hungary'>Hungary</option>
+            <option value='Ireland'>Ireland</option>
+            <option value='Italy'>Italy</option>
+            <option value='Lithuania'>Lithuania</option>
+            <option value='Luxembourg'>Luxembourg</option>
+            <option value='Latvia'>Latvia</option>
+            <option value='Malta'>Malta</option>
+            <option value='Netherlands'>Netherlands</option>
+            <option value='Poland'>Poland</option>
+            <option value='Portugal'>Portugal</option>
+            <option value='Romania'>Romania</option>
+            <option value='Sweden'>Sweden</option>
+            <option value='Slovenia'>Slovenia</option>
+            <option value='Slovakia'>Slovakia</option>
+        </select>
+    </div>
+
+    <svg id="svgGrafic" width=600 height=600>
+    </svg>
+    <div>
+        <label>Afisare bubble chart pentru un an selectat de utilizator folosind un element de tip canvas</label>
+    </div>
+    <div>
+        <label for="ani">Selectati un an: </label>
+        <select name="ani" id="aniBubble">
+            <option value="2006" id="b2006">2006</option>
+            <option value="2007" id="b2007">2007</option>
+            <option value="2008" id="b2008">2008</option>
+            <option value="2009" id="b2009">2009</option>
+            <option value="2010" id="b2010">2010</option>
+            <option value="2011" id="b2011">2011</option>
+            <option value="2012" id="b2012">2012</option>
+            <option value="2013" id="b2013">2013</option>
+            <option value="2014" id="b2014">2014</option>
+            <option value="2015" id="b2015">2015</option>
+            <option value="2016" id="b2016">2016</option>
+            <option value="2017" id="b2017">2017</option>
+            <option value="2018" id="b2018">2018</option>
+            <option value="2019" id="b2019">2019</option>
+            <option value="2020" id="b2020">2020</option>
+        </select>
+        <div>
+            <canvas id="canvas" width="700" height="500"></canvas>
+        </div>
+    </div>
+
+    <div>
+        <label> Afisare sub forma de tabel a datelor disponibile pentru un an selectat de catre utilizator</label>
+        <div>
+        </div>
+        <label for="anii">Selectati un an: </label>
+        <select name="ani" id="ani15">
+            <option value="2006" id="2006">2006</option>
+            <option value="2007" id="2007">2007</option>
+            <option value="2008" id="2008">2008</option>
+            <option value="2009" id="2009">2009</option>
+            <option value="2010" id="2010">2010</option>
+            <option value="2011" id="2011">2011</option>
+            <option value="2012" id="2012">2012</option>
+            <option value="2013" id="2013">2013</option>
+            <option value="2014" id="2014">2014</option>
+            <option value="2015" id="2015">2015</option>
+            <option value="2016" id="2016">2016</option>
+            <option value="2017" id="2017">2017</option>
+            <option value="2018" id="2018">2018</option>
+            <option value="2019" id="2019">2019</option>
+            <option value="2020" id="2020">2020</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tari</th>
+                    <th> PIB </th>
+                    <th>Speranta la viata</th>
+                    <th> Populatia </th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Austria</td>
+                <td id="idpib0"></td>
+                <td id="idsv0"></td>
+                <td id="idpop0"></td>
+            </tr>
+            <tr>
+                <td>Belgium</td>
+                <td id="idpib1"></td>
+                <td id="idsv1"></td>
+                <td id="idpop1"></td>
+            </tr>
+            <tr>
+                <td>Bulgaria</td>
+                <td id="idpib2"></td>
+                <td id="idsv2"></td>
+                <td id="idpop2"></td>
+            </tr>
+            <tr>
+                <td>Cyprus</td>
+                <td id="idpib3"></td>
+                <td id="idsv3"></td>
+                <td id="idpop3"></td>
+            </tr>
+            <tr>
+                <td>Czechia</td>
+                <td id="idpib4"></td>
+                <td id="idsv4"></td>
+                <td id="idpop4"></td>
+            </tr>
+            <tr>
+                <td>Germany (until 1990 former territory of the FRG)</td>
+                <td id="idpib5"></td>
+                <td id="idsv5"></td>
+                <td id="idpop5"></td>
+            </tr>
+            <tr>
+                <td>Denmark</td>
+                <td id="idpib6"></td>
+                <td id="idsv6"></td>
+                <td id="idpop6"></td>
+            </tr>
+            <tr>
+                <td>Estonia</td>
+                <td id="idpib7"></td>
+                <td id="idsv7"></td>
+                <td id="idpop7"></td>
+            </tr>
+            <tr>
+                <td>Greece</td>
+                <td id="idpib8"></td>
+                <td id="idsv8"></td>
+                <td id="idpop8"></td>
+            </tr>
+            <tr>
+                <td>Spain</td>
+                <td id="idpib9"></td>
+                <td id="idsv9"></td>
+                <td id="idpop9"></td>
+            </tr>
+            <tr>
+                <td>Finland</td>
+                <td id="idpib10"></td>
+                <td id="idsv10"></td>
+                <td id="idpop10"></td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td id="idpib11"></td>
+                <td id="idsv11"></td>
+                <td id="idpop11"></td>
+            </tr>
+            <tr>
+                <td>Croatia</td>
+                <td id="idpib12"></td>
+                <td id="idsv12"></td>
+                <td id="idpop12"></td>
+            </tr>
+            <tr>
+                <td>Hungary</td>
+                <td id="idpib13"></td>
+                <td id="idsv13"></td>
+                <td id="idpop13"></td>
+            </tr>
+            <tr>
+                <td>Ireland</td>
+                <td id="idpib14"></td>
+                <td id="idsv14"></td>
+                <td id="idpop14"></td>
+            </tr>
+            <tr>
+                <td>Italy</td>
+                <td id="idpib15"></td>
+                <td id="idsv15"></td>
+                <td id="idpop15"></td>
+            </tr>
+            <tr>
+                <td>Lithuania</td>
+                <td id="idpib16"></td>
+                <td id="idsv16"></td>
+                <td id="idpop16"></td>
+            </tr>
+            <tr>
+                <td>Luxembourg</td>
+                <td id="idpib17"></td>
+                <td id="idsv17"></td>
+                <td id="idpop17"></td>
+            </tr>
+            <tr>
+                <td>Latvia</td>
+                <td id="idpib18"></td>
+                <td id="idsv18"></td>
+                <td id="idpop18"></td>
+            </tr>
+            <tr>
+                <td>Malta</td>
+                <td id="idpib19"></td>
+                <td id="idsv19"></td>
+                <td id="idpop19"></td>
+            </tr>
+            <tr>
+                <td>Netherlands</td>
+                <td id="idpib20"></td>
+                <td id="idsv20"></td>
+                <td id="idpop20"></td>
+            </tr>
+            <tr>
+                <td>Poland</td>
+                <td id="idpib21"></td>
+                <td id="idsv21"></td>
+                <td id="idpop21"></td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td id="idpib22"></td>
+                <td id="idsv22"></td>
+                <td id="idpop22"></td>
+            </tr>
+            <tr>
+                <td>Romania</td>
+                <td id="idpib23"></td>
+                <td id="idsv23"></td>
+                <td id="idpop23"></td>
+            </tr>
+            <tr>
+                <td>Sweden</td>
+                <td id="idpib24"></td>
+                <td id="idsv24"></td>
+                <td id="idpop24"></td>
+            </tr>
+            <tr>
+                <td>Slovenia</td>
+                <td id="idpib25"></td>
+                <td id="idsv25"></td>
+                <td id="idpop25"></td>
+            </tr>
+            <tr>
+                <td>Slovakia</td>
+                <td id="idpib26"></td>
+                <td id="idsv26"></td>
+                <td id="idpop26"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
